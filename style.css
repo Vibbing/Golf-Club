@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: white;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  background-color:transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.597); /* Transparent background color with some opacity */
+  border-radius: 10px; /* Border radius to make the scrollbar thumb round */
+}
+
+
+#navbar {
+  width: 100%;
+  height: 14%;
+  padding: 10px 10px 10px 80px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+  z-index: 99;
+}
+#logo {
+  width: 8%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.navContents {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+#coverVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+#main {
+background-color: rgba(0, 0, 0, 0.37);
+position: relative;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#heading{
+    font-size: 140px;
+    font-weight: bolder;
+    position: relative;
+}
+#heading::before{
+    content: "EAT.DRINK.PLAY";
+    position: absolute;
+    color: rgba(0, 0, 0, 0.448);
+    top: -6px;
+    left: -6px;
+    z-index: -1;
+    -webkit-text-stroke: 2px  rgba(0, 0, 0, 0.445);
+}
+#subHeading{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#description{
+    font-size: 19px;
+    text-align: center;
+    width: 40%;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+}
